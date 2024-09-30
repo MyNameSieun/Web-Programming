@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>라디오 버튼 만들기</title>
+    <style>
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 300px;
+          margin-left: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>먹고 싶은 것 하나만 선택?</h3>
+    <hr />
+    <form>
+      <div>
+        <!-- 같은 name을 가진 라디오 버튼 중 하나만 선택 가능 -->
+        <input type="radio" name="china" value="1" />
+        짜장면<img src="../src/images/3장/짜장면.jpg" />
+      </div>
+      <div>
+        <input type="radio" name="china" value="2" checked />
+        짬뽕<img src="../src/images/3장/짬뽕.jpg" />
+      </div>
+      <div>
+        <input type="radio" name="china" value="3" />
+        탕수육<img src="../src/images/3장/탕수육.jpg" />
+      </div>
+    </form>
+  </body>
+</html>
